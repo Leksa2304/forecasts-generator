@@ -65,6 +65,6 @@ function makeListForecast() {
     const myForecast = templateForecast.content.cloneNode(true);
 
     myForecast.querySelector("h3").textContent = title;
-    myForecast.querySelector("p").textContent = `Вероятность: ${percent}%`;
+    myForecast.querySelector("p").textContent = percent;
     forecasts.prepend(myForecast);
 };
